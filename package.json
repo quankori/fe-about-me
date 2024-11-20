@@ -1,0 +1,24 @@
+{
+  "name": "fe-about-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch --embed-source-map src/scss:public/styles",
+    "start": "sass --no-source-map --style compressed src/scss:public/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quankori/fe-about-me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quankori/fe-about-me/issues"
+  },
+  "homepage": "https://github.com/quankori/fe-about-me#readme",
+  "dependencies": {
+    "sass": "^1.81.0"
+  }
+}
