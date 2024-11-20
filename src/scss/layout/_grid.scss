@@ -1,0 +1,24 @@
+// src/scss/layout/_grid.scss
+@use "../abstracts/abstracts";
+
+.container {
+  display: flex;
+  margin-left: 25%;
+
+  @include abstracts.respond-to(sm) {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+
+  @include abstracts.respond-to(sm) {
+    height: auto;
+  }
+}

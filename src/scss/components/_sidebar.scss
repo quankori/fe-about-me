@@ -1,0 +1,93 @@
+// src/scss/components/_sidebar.scss
+@use "../abstracts/abstracts";
+
+.sidebar {
+  width: 25%;
+  min-width: 200px;
+  background-color: abstracts.$color-dark;
+  color: abstracts.$color-white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__avatar {
+    margin-bottom: 1.5rem;
+
+    & .sidebar__image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid abstracts.$color-primary;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    & .sidebar__name {
+      font-size: abstracts.$font-size-large;
+      margin: 0.5rem 0;
+    }
+
+    & .sidebar__position {
+      font-size: abstracts.$font-size-base;
+      color: lighten(abstracts.$color-white, 20%);
+      margin: 0;
+    }
+  }
+
+  &__contacts {
+    width: 100%;
+
+    & .sidebar__contact {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      background-color: abstracts.$color-primary;
+      border-radius: abstracts.$border-radius;
+      color: abstracts.$color-white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken(abstracts.$color-primary, 10%);
+      }
+
+      & .sidebar__icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  @include abstracts.respond-to(sm) {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__avatar,
+    &__info,
+    &__contacts {
+      margin-bottom: 0;
+    }
+
+    &__contacts {
+      flex-direction: row;
+      justify-content: center;
+
+      & .sidebar__contact {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}

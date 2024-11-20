@@ -1,2 +1,11 @@
+@use "./abstracts/mixins";
+@use "./abstracts/variables";
+
 @use "./base/base";
 
+@use "./components/about";
+@use "./components/sidebar";
+
+@use "./layout/grid";
+
+@use "./pages/index";

@@ -1,0 +1,27 @@
+// src/scss/abstracts/_variables.scss
+
+// Màu sắc
+$color-primary: #3498db;
+$color-secondary: #2ecc71;
+$color-danger: #e74c3c;
+$color-light: #f4f4f4;
+$color-dark: #2c3e50;
+$color-white: #ffffff;
+
+// Font
+$font-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-heading: "Georgia", serif;
+
+// Kích thước
+$font-size-base: 16px;
+$font-size-large: 24px;
+$font-size-small: 12px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Border radius
+$border-radius: 4px;
